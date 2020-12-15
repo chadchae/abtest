@@ -1,18 +1,16 @@
 <html>
 <head>
 <script type="text/javascript">
-  var sites = [
-                        'https://docs.google.com/forms/d/e/1FAIpQLSceUaXxB1Hq_o1eSagBk6lVgKeLdwYZc_whJBSO9HZAMG3hug/viewform?usp=sf_link',
-                        'https://docs.google.com/forms/d/e/1FAIpQLSfilYwwUFTCfgffRaovkIvKlBBjue0X_ZuN9dArv_syUUI2yQ/viewform?usp=sf_link',
-                        'https://docs.google.com/forms/d/e/1FAIpQLScz0QkJQfHTcbdWKdZhN990FscwVrmqeNykyeOE2b7UYGKbsg/viewform?usp=sf_link'
-                      ];
-   var target = Math.floor(Math.random() sites.length);
-    window.location = sites[target];
 
-       function goRandomSite(sites) {
-             var target = Math.floor(Math.random() sites.length);
-             window.location = sites[target];
-              }
+var urls = new Array();
+urls[0] = "https://docs.google.com/forms/d/e/1FAIpQLSceUaXxB1Hq_o1eSagBk6lVgKeLdwYZc_whJBSO9HZAMG3hug/viewform?usp=sf_link";
+urls[1] = "https://docs.google.com/forms/d/e/1FAIpQLSfilYwwUFTCfgffRaovkIvKlBBjue0X_ZuN9dArv_syUUI2yQ/viewform?usp=sf_link";
+urls[2] = "https://docs.google.com/forms/d/e/1FAIpQLScz0QkJQfHTcbdWKdZhN990FscwVrmqeNykyeOE2b7UYGKbsg/viewform?usp=sf_link";
+
+var random = Math.floor(Math.random()*urls.length);
+
+window.location = urls[random];
+
 </script>
 <Title>AB TEST</Title>
 
