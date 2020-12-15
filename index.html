@@ -1,10 +1,19 @@
 <html>
 <head>
   <script type="text/javascript">
-    if ( Math.random() <= 0.5 )
-      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSceUaXxB1Hq_o1eSagBk6lVgKeLdwYZc_whJBSO9HZAMG3hug/viewform?usp=sf_link"; 
-    else //semicolon removed from here
-      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSe1M5Vbqwx3i7ux-EJQhufoXEHRA0DVYBaH-n0t4LXJgyFVng/viewform?usp=sf_link";
+var sites = [
+	'https://docs.google.com/forms/d/e/1FAIpQLSceUaXxB1Hq_o1eSagBk6lVgKeLdwYZc_whJBSO9HZAMG3hug/viewform?usp=sf_link',
+	'https://docs.google.com/forms/d/e/1FAIpQLSe1M5Vbqwx3i7ux-EJQhufoXEHRA0DVYBaH-n0t4LXJgyFVng/viewform?usp=sf_link',
+	'https://docs.google.com/forms/d/e/1FAIpQLSdzsj3X1SBK6vFBo4ssJq5Ire8wk5CsiYz1MHFRLePuODgVLA/viewform?usp=sf_link'
+	];
+
+var target = Math.floor(Math.random() sites.length);
+window.location = sites[target];
+
+function goRandomSite(sites) {
+	var target = Math.floor(Math.random() sites.length);
+	window.location = sites[target];
+	}
 </script>
 <Title>AB TEST</Title>
 
